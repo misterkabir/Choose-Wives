@@ -30,7 +30,7 @@ x <- replicate(1000, {
                 optimal <- wives[100]
         }
         
-        ## Print Max and deviation from Max
+        ## Print choice
         
         optimal
         
