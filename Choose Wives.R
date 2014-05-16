@@ -8,7 +8,7 @@ x <- replicate(1000, {
         ## Note: In reality the rankings would be closer to a normal 
         ## distribution. To set bounds from 0 to 10 we use 
         ## a uniform distribution.
-        wives <- runif(100, min = 0, max = 10)
+        wives <- runif(100, min = 1, max = 10)
         max <- max(wives)
         
         ## Evaluate first set 1/e variables.
