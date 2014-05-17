@@ -3,13 +3,11 @@
 ## Replicate for 1000 trials
 x <- replicate(1000, {
         
-        
         ## Create random variable for potential mates ranked from 0 to 10.
         ## Note: In reality the rankings would be closer to a normal 
         ## distribution. To set bounds from 0 to 10 we use 
         ## a uniform distribution.
         wives <- runif(100, min = 1, max = 10)
-        max <- max(wives)
         
         ## Evaluate first set 1/e variables.
         best1 <- max(wives[1:36])
@@ -19,7 +17,6 @@ x <- replicate(1000, {
         for(i in wives[37:100]){
                 if(i > best1){
                         optimal <- i   
-                        
                         break
                 }
         }
@@ -31,10 +28,10 @@ x <- replicate(1000, {
         }
         
         ## Print choice
-        
         optimal
         
 })
+
 ## Historgram
 median = paste("Median Spouse Rank:", formatC(median(x), digits = 3))
 hist(x, main = median, col = 'red', xlab = 'Rank on a Scale from 1 to 10')
