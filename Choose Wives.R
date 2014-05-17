@@ -33,5 +33,6 @@ x <- replicate(1000, {
 })
 
 ## Historgram
+library(lattice)
 median = paste("Median Spouse Rank:", formatC(median(x), digits = 3))
-hist(x, main = median, col = 'red', xlab = 'Rank on a Scale from 1 to 10')
+histogram(x, main = median, col = 'red', xlab = 'Rank on a Scale from 1 to 10')
