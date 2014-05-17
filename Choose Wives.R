@@ -1,5 +1,5 @@
 ## Optimal Stopping Problem
-
+set.seed(55)
 ## Replicate for 1000 trials
 x <- replicate(1000, {
         
