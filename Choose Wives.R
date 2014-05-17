@@ -36,3 +36,11 @@ x <- replicate(1000, {
 library(lattice)
 median = paste("Median Spouse Rank:", formatC(median(x), digits = 3))
 histogram(x, main = median, col = 'red', xlab = 'Rank on a Scale from 1 to 10')
+
+## Calculate probability of getting at least an 8.
+good <- x >= 8.00 
+probability <- table(good)
+probability <- probability[2]/(probability[2] + probability[1])
+names(probability) <- "Probability of getting at least an eight"
+print(probability)
+
