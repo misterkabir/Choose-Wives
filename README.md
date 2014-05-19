@@ -6,6 +6,6 @@ Fun optimal stop model to help choose a wife. The project was inspired by an NPR
 
 ## Use
 
-Feel free to use, edit, update, enhance, and review for errors. Please attribute it by linking my Github page or the related blog article linked above.
+Feel free to use, edit, update, enhance, and review for errors. Please attribute it to me by linking my Github page or the related blog article linked above.
 
 Cheers.
