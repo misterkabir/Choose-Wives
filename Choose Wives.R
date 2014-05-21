@@ -35,7 +35,7 @@ x <- replicate(1000, {
 ## Historgram
 library(lattice)
 median = paste("Median Spouse Rank:", formatC(median(x), digits = 3))
-histogram(x, main = median, col = 'red', xlab = 'Rank on a Scale from 1 to 10')
+histogram(x, breaks = 100, main = median, col = 'red', xlab = 'Rank on a Scale from 1 to 10')
 
 ## Calculate probability of getting at least an 8.
 good <- x >= 8.00 
