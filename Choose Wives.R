@@ -4,7 +4,7 @@ set.seed(55)
 x <- replicate(1000, {
         
         ## Create random variable for potential mates ranked from 0 to 10.
-        ## Note: In reality the rankings would be closer to a normal 
+        ## Note: In reality the rankings would be closer to a lognormal 
         ## distribution. To set bounds from 0 to 10 we use 
         ## a uniform distribution.
         wives <- runif(100, min = 1, max = 10)
